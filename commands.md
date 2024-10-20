@@ -90,3 +90,36 @@
   ```bash
   git checkout -b new-branch existing-branch
   ```
+## 1. File Operations
+- **Edit a file using the Vim editor:**  
+  `vi test.txt`
+- **List files in the current directory:**  
+  `ls`
+
+## 2. Staging and Committing Changes
+- **Check the status of your working directory and staging area:**  
+  `git status`
+- **Stage a specific file for commit:**  
+  `git add test.txt`
+- **Commit the staged changes with a descriptive message:**  
+  `git commit -m "test added in main"`
+
+## 3. Pushing and Pulling Changes
+- **Push local changes to the remote repository:**  
+  `git push`
+- **Pull updates from the remote repository to your local repository:**  
+  `git pull`
+
+## 4. Branch Operations
+- **Delete a branch locally:**  
+  `git branch -d staging`
+- **Force delete a branch locally (if it hasn't been merged):**  
+  `git branch -D staging`
+
+## 5. Merging and Rebasing
+- **Set Git to only allow fast-forward merges when pulling:**  
+  `git config pull.ff only`
+- **Merge branches without fast-forwarding (create a merge commit):**  
+  `git merge --no-ff`
+- **Rebase your current branch onto another branch:**  
+  `git rebase`
